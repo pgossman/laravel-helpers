@@ -1,5 +1,5 @@
 {
-    "name": "emu-physplant/helpers",
+    "name": "emu-physplant/laravel-helpers",
     "description": "Additional helper functions for Laravel projects",
     "version": "0.1.0",
     "type": "library",
