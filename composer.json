@@ -1,0 +1,9 @@
+{
+    "name": "emu-physplant/helpers",
+    "description": "Additional helper functions for Laravel projects",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "files": ["src/functions.php"]
+    }
+}
