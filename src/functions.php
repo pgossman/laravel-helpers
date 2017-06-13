@@ -41,3 +41,42 @@ if (! function_exists('cleanUsername')) {
         return trim(strtolower($usernameArr[0]));
     }
 }
+
+if (! function_exists('allNullValues')) {
+    /**
+     * Determines if all values in an array are null.
+     *
+     * @param array $array
+     * @return bool
+     */
+    function allNullValues(array $array)
+    {
+        foreach ($array as $value) {
+            if ($value !== null) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+
+if (! function_exists('removeNullArrays')) {
+    /**
+     * Removes sub-arrays whose values are all equal to null. Useful for cleaning request input.
+     *
+     * @param array $array two-dimensional array
+     * @return array
+     */
+    function removeNullArrays(array $array)
+    {
+        for ($i = 0; $i < count($array); $i++) {
+            if (is_array($array[$i]) && allNullValues($array[$i])) {
+                array_splice($array, $i, 1);
+                $i--;
+            }
+        }
+
+        return $array;
+    }
+}
