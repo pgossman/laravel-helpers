@@ -1,7 +1,7 @@
 {
-    "name": "emu-physplant/laravel-helpers",
+    "name": "pgossman/laravel-helpers",
     "description": "Additional helper functions for Laravel projects",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "type": "library",
     "autoload": {
         "files": ["src/functions.php"]
