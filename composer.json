@@ -7,6 +7,6 @@
         "files": ["src/functions.php"]
     },
     "require": {
-        "laravel/laravel": "v5.4.23"
+        "laravel/laravel": "~5.4"
     }
 }
